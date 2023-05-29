@@ -19,7 +19,11 @@ import org.springframework.web.client.RestTemplate;
 public class OrderController {
 
 
-    public static final String PAYMENT_URL = "http://localhost:8001";
+//    public static final String PAYMENT_URL = "http://localhost:8001";
+
+
+    // 找微服务名称
+    public static final String PAYMENT_URL = "http://CLOUD-PAYMENT-SERVICE";
 
 
     /**
