@@ -3,10 +3,17 @@ package com.atguigu.springcloud.controller;
 import com.atguigu.springcloud.entities.CommonResult;
 import com.atguigu.springcloud.entities.Payment;
 import com.atguigu.springcloud.service.PaymentService;
+import com.netflix.appinfo.InstanceInfo;
+
+import com.netflix.discovery.DiscoveryClient;
+import com.netflix.discovery.shared.Applications;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.web.bind.annotation.*;
+
+import javax.annotation.Resource;
+import java.util.List;
 
 /**
  * @author wrmeng
@@ -23,6 +30,9 @@ public class PaymentController {
 
     @Value("${server.port}")
     private String serverPort;
+
+//    @Resource
+//    private DiscoveryClient discoveryClient;
 
     // 进行区分
     @PostMapping(value = "/payment/create")
@@ -54,6 +64,17 @@ public class PaymentController {
         }
 
     }
+
+//    @GetMapping(value = "/payment/discovery")
+//    public Object discovery() {
+//
+//
+//        List<InstanceInfo> instancesById = discoveryClient.getInstancesById("CLOUD-PAYMENT-SERVICE");
+//        for (InstanceInfo info : instancesById) {
+//            log.info(info.getId()+"\t"+info.getHostName()+"\t"+info.getPort()+"\t");
+//        }
+//        return  this.discoveryClient;
+//    }
 
 
 }
