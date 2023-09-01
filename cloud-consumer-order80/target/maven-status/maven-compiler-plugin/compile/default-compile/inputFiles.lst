@@ -1,3 +1,6 @@
 /Users/wangrumeng/Wrm/Java/SpringFramework/SpringCloudAlibaba/cloud2020/cloud-consumer-order80/src/main/java/com/atguigu/springcloud/controller/OrderController.java
+/Users/wangrumeng/Wrm/Java/SpringFramework/SpringCloudAlibaba/cloud2020/cloud-consumer-order80/src/main/java/com/atguigu/myrule/MySelfRule.java
+/Users/wangrumeng/Wrm/Java/SpringFramework/SpringCloudAlibaba/cloud2020/cloud-consumer-order80/src/main/java/com/atguigu/springcloud/lb/MyLB.java
 /Users/wangrumeng/Wrm/Java/SpringFramework/SpringCloudAlibaba/cloud2020/cloud-consumer-order80/src/main/java/com/atguigu/springcloud/OrderMain80.java
+/Users/wangrumeng/Wrm/Java/SpringFramework/SpringCloudAlibaba/cloud2020/cloud-consumer-order80/src/main/java/com/atguigu/springcloud/lb/LoadBalancer.java
 /Users/wangrumeng/Wrm/Java/SpringFramework/SpringCloudAlibaba/cloud2020/cloud-consumer-order80/src/main/java/com/atguigu/springcloud/config/ApplicationContextConfig.java

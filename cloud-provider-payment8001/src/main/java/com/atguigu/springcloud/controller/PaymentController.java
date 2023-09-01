@@ -3,17 +3,13 @@ package com.atguigu.springcloud.controller;
 import com.atguigu.springcloud.entities.CommonResult;
 import com.atguigu.springcloud.entities.Payment;
 import com.atguigu.springcloud.service.PaymentService;
-import com.netflix.appinfo.InstanceInfo;
 
-import com.netflix.discovery.DiscoveryClient;
-import com.netflix.discovery.shared.Applications;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.web.bind.annotation.*;
 
-import javax.annotation.Resource;
-import java.util.List;
+
 
 /**
  * @author wrmeng
@@ -76,5 +72,8 @@ public class PaymentController {
 //        return  this.discoveryClient;
 //    }
 
-
+   @GetMapping(value = "/payment/lb")
+   public  String getPaymentLB(){
+        return serverPort;
+   }
 }

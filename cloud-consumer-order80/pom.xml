@@ -21,7 +21,7 @@
 
     <dependencies>
 
-        <!--eureka-client eureka 的两大组件 -->
+        <!--eureka-client eureka 的两大组件 本身集成了ribbon  -->
         <dependency>
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>

@@ -1,0 +1,31 @@
+
+Ñ
+Tcloud-provider-payment8001/src/main/java/com/atguigu/springcloud/dao/PaymentDao.java,1/4/147537f0fc4a416a8bc71aa5304a98bd14f01956
+å
+\cloud-provider-payment8001/src/main/java/com/atguigu/springcloud/service/PaymentService.java,1/1/11d55cbc429655218d66f46007c7d6df39371bcc
+ï
+ecloud-provider-payment8001/src/main/java/com/atguigu/springcloud/service/impl/PaymentServiceImpl.java,8/3/835aa53bf64b6029d338c680b55f910187e84524
+Ç
+Rcloud-api-commons/src/main/java/com/atguigu/springcloud/entities/CommonResult.java,2/3/238cd6d03a2c4aa68267dda97d5cd7c2afae8d71
+I
+cloud-api-commons/pom.xml,8/c/8cf05d42505ff49047085dd6dd68bf86e15d37a4
+O
+cloud-eureka-server7001/pom.xml,1/0/102e18b64a275ebd8dfa2168607577b0e641d1d7
+O
+cloud-eureka-server7002/pom.xml,6/9/69c2b01cc2ae9de37bc4bbb53c89f665afc20837
+R
+"cloud-provider-payment8002/pom.xml,d/2/d2bb34221ba1368d3a59155a41c7f7a6ca55a5cc
+ì
+ccloud-consumerzk-order80/src/main/java/com/atguigu/springcloud/config/ApplicationContextConfig.java,e/9/e9745ecd55a134311e450448dca7e11abc6a5725
+P
+ cloud-consumerzk-order80/pom.xml,b/d/bd079fa019b24e5030b8da596bfa6ea0f5e3f471
+R
+"cloud-provider-payment8004/pom.xml,4/d/4d49cb9474a1167d135f15337a9b0169271c8f88
+í
+bcloud-provider-payment8004/src/main/java/com/atguigu/springcloud/controller/PaymentController.java,6/0/60d08cbf8bf30a6973273a52c265130a118b1786
+Å
+Qcloud-consumerzk-order80/src/main/java/com/atguigu/springcloud/OrderMainZk80.java,d/7/d7edf85e60b484627fc70a808db7a9df47174368
+é
+^cloud-consumerzk-order80/src/main/java/com/atguigu/springcloud/controller/OrderController.java,b/1/b14f6aa39cfa744015940e6ec90e79f239b2069e
+Ö
+Ucloud-provider-payment8004/src/main/java/com/atguigu/springcloud/PaymentMain8004.java,a/6/a6e6440c8549330ad51d670c58a18f2ef8e689ec
