@@ -11,8 +11,6 @@ O
 cloud-eureka-server7001/pom.xml,1/0/102e18b64a275ebd8dfa2168607577b0e641d1d7
 O
 cloud-eureka-server7002/pom.xml,6/9/69c2b01cc2ae9de37bc4bbb53c89f665afc20837
-R
-"cloud-provider-payment8002/pom.xml,d/2/d2bb34221ba1368d3a59155a41c7f7a6ca55a5cc
 “
 ccloud-consumerzk-order80/src/main/java/com/atguigu/springcloud/config/ApplicationContextConfig.java,e/9/e9745ecd55a134311e450448dca7e11abc6a5725
 P
