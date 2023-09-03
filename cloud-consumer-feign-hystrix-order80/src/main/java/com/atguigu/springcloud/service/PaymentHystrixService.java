@@ -12,7 +12,8 @@ import org.springframework.web.bind.annotation.PathVariable;
  **/
 
 @Component
-@FeignClient(value = "CLOUD-PROVIDER-HYSTRIX-PAYMENT") // 使用oenfeign 实现负载均衡
+// fallback指定服务降级指定类
+@FeignClient(value = "CLOUD-PROVIDER-HYSTRIX-PAYMENT",fallback = PaymentFallbackService.class) // 使用oenfeign 实现负载均衡
 public interface PaymentHystrixService
 {
     @GetMapping("/payment/hystrix/ok/{id}")
