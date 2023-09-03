@@ -1,0 +1,12 @@
+server:
+  port: 9001
+# 应用名称
+spring:
+  application:
+  name: hystrix-dashboard
+# 应用服务 WEB 访问端口
+
+# 由于Spring Cloud 版本升级后，监控页面显示：Unable to connect to Command Metric Stream。所以添加如下属性
+hystrix:
+  dashboard:
+    proxy-stream-allow-list: "*"
