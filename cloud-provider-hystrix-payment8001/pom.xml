@@ -18,7 +18,7 @@
 
 	<dependencies>
 
-       <!-- hystrix依赖       -->
+       <!-- hystrix依赖  一般用在客户端进行服务降级，但是服务端也都是支持的     -->
 		<dependency>
 		  <groupId>org.springframework.cloud</groupId>
 		  <artifactId>spring-cloud-starter-netflix-hystrix</artifactId>
@@ -63,7 +63,11 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-jdbc</artifactId>
 		</dependency>
-		<!-- 热部署插件 devtools-->
+		<!-- 热部署插件 devtools 对java代码的改动明显，但是对@hystrixCommand内属性的修改建议重启微服务
+		   @HystrixCommand(fallbackMethod = "paymentInfo_TimeOutHandler",commandProperties = {
+            @HystrixProperty(name="execution.isolation.thread.timeoutInMilliseconds",value="3600")
+          })
+		-->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-devtools</artifactId>
