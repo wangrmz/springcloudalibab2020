@@ -100,8 +100,6 @@ bcloud-provider-payment8001/src/main/java/com/atguigu/springcloud/controller/Pay
 Zcloud-consumer-feign-order80/src/main/java/com/atguigu/springcloud/config/FeignConfig.java,b/7/b7737a56db0161a71fd9790b94e946aa11d608fb
 R
 "cloud-provider-payment8002/pom.xml,d/2/d2bb34221ba1368d3a59155a41c7f7a6ca55a5cc
-€
-Pcloud-eureka-server7001/src/main/java/com/atguigu/springloud/EurekaMain7001.java,7/7/77e1f455ebf452e3fbd23cb8a68a2b6207f3005a
 ]
 -cloud-provider-hystrix-payment8001/.gitignore,f/8/f8ba7c295951a3f3af8bccb3146504124c631c6c
 ˆ
