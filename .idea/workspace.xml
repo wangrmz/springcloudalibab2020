@@ -4,10 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="44bac13b-77a2-4236-89ea-78932210c2c8" name="Changes" comment="config配置中心-动态刷新config客户端：全局刷新+定点通知">
-      <change afterPath="$PROJECT_DIR$/cloud-stream-rabbitmq-provider8801/src/main/java/com/atguigu/springcloud/controller/SendMessageController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-stream-rabbitmq-provider8801/src/main/java/com/atguigu/springcloud/service/IMessageProvider.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-stream-rabbitmq-provider8801/src/main/java/com/atguigu/springcloud/service/impl/MessageProviderImpl.java" afterDir="false" />
+    <list default="true" id="44bac13b-77a2-4236-89ea-78932210c2c8" name="Changes" comment="Stream消息驱动之生产者">
+      <change afterPath="$PROJECT_DIR$/cloud-stream-rabbitmq-consumer8802/src/main/java/com/atguigu/springcloud/service/ReceiveMessageListener.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
@@ -79,7 +77,7 @@
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.086979166",
     "project.structure.side.proportion": "0.22962111",
-    "settings.editor.selected.configurable": "MavenSettings",
+    "settings.editor.selected.configurable": "File.Encoding",
     "spring.configuration.checksum": "7dfdd096dd8298b9239ae1dbbd48f438"
   },
   "keyToStringList": {
@@ -122,7 +120,7 @@
     </option>
     <option name="openRunningConfigInTab" value="true" />
   </component>
-  <component name="RunManager" selected="Spring Boot.StreamMQMain8801">
+  <component name="RunManager" selected="Spring Boot.StreamMQMain8802">
     <configuration name="T2" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="T2" />
       <module name="cloud-provider-payment8001" />
@@ -154,6 +152,13 @@
     <configuration name="CloudProviderPayment8001Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="cloud-provider-payment8001" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.atguigu.cloudproviderpayment8001.CloudProviderPayment8001Application" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CloudStreamRabbitmqConsumer8803Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="cloud-stream-rabbitmq-consumer8803" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.atguigu.springcloud.cloudstreamrabbitmqconsumer8803.CloudStreamRabbitmqConsumer8803Application" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -318,8 +323,18 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="StreamMQMain8802" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <option name="ACTIVE_PROFILES" />
+      <module name="cloud-stream-rabbitmq-consumer8802" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.atguigu.springcloud.StreamMQMain8802" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <list>
       <item itemvalue="Application.T2" />
+      <item itemvalue="Spring Boot.CloudStreamRabbitmqConsumer8803Application" />
+      <item itemvalue="Spring Boot.StreamMQMain8802" />
       <item itemvalue="Spring Boot.StreamMQMain8801" />
       <item itemvalue="Spring Boot.ConfigClientMain3366" />
       <item itemvalue="Spring Boot.ConfigClientMain3355" />
@@ -366,7 +381,7 @@
       <workItem from="1684420570657" duration="63055000" />
       <workItem from="1690212867912" duration="9746000" />
       <workItem from="1693547678612" duration="58888000" />
-      <workItem from="1693795623494" duration="15227000" />
+      <workItem from="1693795623494" duration="18073000" />
     </task>
     <task id="LOCAL-00001" summary="测试提交--------">
       <created>1685333691232</created>
@@ -529,7 +544,14 @@
       <option name="project" value="LOCAL" />
       <updated>1693811944567</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="Stream消息驱动之生产者">
+      <created>1693833368060</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1693833368060</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -579,7 +601,8 @@
     <MESSAGE value="config配置中心基础获取github配置文件基础工程搭建--补充" />
     <MESSAGE value="config配置中心手动版本的自动刷新config客户端" />
     <MESSAGE value="config配置中心-动态刷新config客户端：全局刷新+定点通知" />
-    <option name="LAST_COMMIT_MESSAGE" value="config配置中心-动态刷新config客户端：全局刷新+定点通知" />
+    <MESSAGE value="Stream消息驱动之生产者" />
+    <option name="LAST_COMMIT_MESSAGE" value="Stream消息驱动之生产者" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

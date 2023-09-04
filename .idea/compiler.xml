@@ -19,6 +19,7 @@
         <module name="cloud-consumerzk-order80" />
         <module name="cloud-consumerconsul-order80" />
         <module name="cloud-consumer-hystrix-dashboard9001" />
+        <module name="cloud-stream-rabbitmq-consumer8802" />
         <module name="cloud-config-center-3344" />
         <module name="cloud-gateway-gateway9527" />
         <module name="cloud-consumer-order80" />
@@ -28,6 +29,9 @@
         <module name="cloud-consumer-feign-order80" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="cloud-stream-rabbitmq-consumer8803" target="17" />
+    </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
@@ -38,6 +42,8 @@
       <module name="cloud-consumer-feign-order80" options="" />
       <module name="cloud-gateway-gateway9527" options="" />
       <module name="cloud-provider-payment8001" options="" />
+      <module name="cloud-stream-rabbitmq-consumer8802" options="" />
+      <module name="cloud-stream-rabbitmq-consumer8803" options="-parameters" />
       <module name="cloud-stream-rabbitmq-provider8801" options="" />
       <module name="cloud2020" options="-parameters" />
     </option>

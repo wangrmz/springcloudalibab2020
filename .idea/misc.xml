@@ -13,6 +13,7 @@
         <option value="$PROJECT_DIR$/cloud-config-client-3355/pom.xml" />
         <option value="$PROJECT_DIR$/cloud-config-client-3366/pom.xml" />
         <option value="$PROJECT_DIR$/cloud-stream-rabbitmq-provider8801/pom.xml" />
+        <option value="$PROJECT_DIR$/cloud-stream-rabbitmq-consumer8802/pom.xml" />
       </list>
     </option>
   </component>
