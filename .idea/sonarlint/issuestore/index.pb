@@ -15,8 +15,6 @@ O
 ccloud-consumerzk-order80/src/main/java/com/atguigu/springcloud/config/ApplicationContextConfig.java,e/9/e9745ecd55a134311e450448dca7e11abc6a5725
 P
  cloud-consumerzk-order80/pom.xml,b/d/bd079fa019b24e5030b8da596bfa6ea0f5e3f471
-R
-"cloud-provider-payment8004/pom.xml,4/d/4d49cb9474a1167d135f15337a9b0169271c8f88
 í
 bcloud-provider-payment8004/src/main/java/com/atguigu/springcloud/controller/PaymentController.java,6/0/60d08cbf8bf30a6973273a52c265130a118b1786
 Å

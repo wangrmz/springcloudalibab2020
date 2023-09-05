@@ -1,0 +1,20 @@
+#  server.port=8081
+#    spring.application.name=nacos-provider
+#    spring.cloud.nacos.discovery.server-addr=127.0.0.1:8848
+#    management.endpoints.web.exposure.include=*
+server:
+  port: 9002
+
+spring:
+  application:
+    name: nacos-payment-provider
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 127.0.0.1:8848 #nacos作为注册中心的地址
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
