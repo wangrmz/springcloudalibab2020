@@ -20,6 +20,11 @@
 
 
     <dependencies>
+        <!--链路调用 sleuth + zipkin  -->
+        <dependency>
+          <groupId>org.springframework.cloud</groupId>
+          <artifactId>spring-cloud-starter-zipkin</artifactId>
+        </dependency>
 
         <!--eureka-client eureka 的两大组件 本身集成了ribbon  -->
         <dependency>
