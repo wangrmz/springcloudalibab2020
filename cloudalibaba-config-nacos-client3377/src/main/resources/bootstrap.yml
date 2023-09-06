@@ -13,10 +13,12 @@ spring:
   cloud:
     nacos:
       discovery:
-        server-addr: localhost:8848
+        server-addr: localhost:8848 #服务注册中心
       config:
-        server-addr: localhost:8848
-        file-extension: yaml
+        server-addr: localhost:8848 #服务配置中心
+        file-extension: yaml  #配置文件的后缀
+        group: TEST_GROUP  #分组设置
+        namespace: 097ca8eb-2388-49b3-965a-e55b2ecea809 #命名空间
 
 # ${spring.application.name}-${spring.profile.active}.${spring.cloud.nacos.config.file-extension}
 
