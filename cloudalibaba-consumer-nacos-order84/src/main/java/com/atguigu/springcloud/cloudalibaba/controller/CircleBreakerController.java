@@ -28,7 +28,8 @@ public class CircleBreakerController
 
     @RequestMapping("/consumer/fallback/{id}")
     //@SentinelResource(value = "fallback")// 没有配置
-    @SentinelResource(value = "fallback",fallback = "handlerFallback") //fallback负责业务异常
+    //@SentinelResource(value = "fallback",fallback = "handlerFallback") //fallback负责业务异常
+    @SentinelResource(value = "fallback",blockHandler = "blockHandler") //blockHandler负责在sentinel里面配置的降级限流
     public CommonResult fallback(@PathVariable Long id)
     {
         CommonResult result = restTemplate.getForObject(SERVICE_URL + "/paymentSQL/"+id,CommonResult.class,id);
@@ -49,10 +50,10 @@ public class CircleBreakerController
      * @param e
      * @return
      */
-    public CommonResult handlerFallback(@PathVariable  Long id,Throwable e) {
-        Payment payment = new Payment(id,"null");
-        return new CommonResult(444,"兜底异常handlerFallback,exception内容  "+e.getMessage(),payment);
-    }
+//    public CommonResult handlerFallback(@PathVariable  Long id,Throwable e) {
+//        Payment payment = new Payment(id,"null");
+//        return new CommonResult(444,"兜底异常handlerFallback,exception内容  "+e.getMessage(),payment);
+//    }
 
     /**
      * 处理sentinel配置异常
