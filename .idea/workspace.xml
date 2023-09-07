@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="44bac13b-77a2-4236-89ea-78932210c2c8" name="Changes" comment="Sentinel-只配置fallback，处理业务异常">
+    <list default="true" id="44bac13b-77a2-4236-89ea-78932210c2c8" name="Changes" comment="Sentinel-只配置blockHandler处理sentinel的配置异常">
       <change beforePath="$PROJECT_DIR$/cloudalibaba-consumer-nacos-order84/src/main/java/com/atguigu/springcloud/cloudalibaba/controller/CircleBreakerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/cloudalibaba-consumer-nacos-order84/src/main/java/com/atguigu/springcloud/cloudalibaba/controller/CircleBreakerController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -461,7 +461,7 @@
       <workItem from="1684420570657" duration="63055000" />
       <workItem from="1690212867912" duration="9746000" />
       <workItem from="1693547678612" duration="58888000" />
-      <workItem from="1693795623494" duration="68394000" />
+      <workItem from="1693795623494" duration="68814000" />
     </task>
     <task id="LOCAL-00001" summary="测试提交--------">
       <created>1685333691232</created>
@@ -736,7 +736,14 @@
       <option name="project" value="LOCAL" />
       <updated>1694094300893</updated>
     </task>
-    <option name="localTasksCounter" value="40" />
+    <task id="LOCAL-00040" summary="Sentinel-只配置blockHandler处理sentinel的配置异常">
+      <created>1694094635699</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1694094635699</updated>
+    </task>
+    <option name="localTasksCounter" value="41" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -765,8 +772,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Hystrix Dashboard图形化监控" />
-    <MESSAGE value="gateway服务网关基础工程搭建" />
     <MESSAGE value="gateway服务网关-代码配置路由" />
     <MESSAGE value="gateway服务网关-常用的predicate" />
     <MESSAGE value="gateway服务网关-过滤器Filter" />
@@ -790,7 +795,9 @@
     <MESSAGE value="Sentinel-@SentinelResource注解：&#10;1、按资源名称限流+后续处理；&#10;2、按照Url地址限流+后续处理；&#10;3、客户自定义限流处理逻辑；" />
     <MESSAGE value="Sentinel-服务熔断基础工程搭建（未配置）&#10;provider9004+9004,order84" />
     <MESSAGE value="Sentinel-只配置fallback，处理业务异常" />
-    <option name="LAST_COMMIT_MESSAGE" value="Sentinel-只配置fallback，处理业务异常" />
+    <MESSAGE value="Sentinel-只配置blockHandler" />
+    <MESSAGE value="Sentinel-只配置blockHandler处理sentinel的配置异常" />
+    <option name="LAST_COMMIT_MESSAGE" value="Sentinel-只配置blockHandler处理sentinel的配置异常" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
