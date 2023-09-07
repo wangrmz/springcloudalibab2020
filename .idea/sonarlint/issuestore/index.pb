@@ -5,8 +5,6 @@ Tcloud-provider-payment8001/src/main/java/com/atguigu/springcloud/dao/PaymentDao
 ecloud-provider-payment8001/src/main/java/com/atguigu/springcloud/service/impl/PaymentServiceImpl.java,8/3/835aa53bf64b6029d338c680b55f910187e84524
 ‚
 Rcloud-api-commons/src/main/java/com/atguigu/springcloud/entities/CommonResult.java,2/3/238cd6d03a2c4aa68267dda97d5cd7c2afae8d71
-I
-cloud-api-commons/pom.xml,8/c/8cf05d42505ff49047085dd6dd68bf86e15d37a4
 O
 cloud-eureka-server7001/pom.xml,1/0/102e18b64a275ebd8dfa2168607577b0e641d1d7
 O
@@ -122,8 +120,6 @@ jcloud-provider-hystrix-payment8001/src/main/java/com/atguigu/springcloud/contro
 hcloud-consumer-hystrix-dashboard9001/src/main/java/com/atguigu/springcloud/HystrixDashboardMain9001.java,1/f/1fb4d1b0d45d19bb4aeeabf3e78a791d2f6c793c
 ”
 dcloud-provider-hystrix-payment8001/src/main/java/com/atguigu/springcloud/PaymentHystrixMain8001.java,c/8/c8d0189dde0a8b82168eb37b3aa41470f7ace45a
-Z
-*cloud-provider-hystrix-payment8001/pom.xml,2/1/218df82abb6b50cf4b69b19c34c61218eb53799e
 T
 $cloud-gateway-gateway9527/.gitignore,3/3/332e2099393fa2a11b1aa5dfa9a2613769b2d9a0
 Q
