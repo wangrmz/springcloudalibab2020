@@ -30,7 +30,8 @@ public class CircleBreakerController
     //@SentinelResource(value = "fallback")// 没有配置
     //@SentinelResource(value = "fallback",fallback = "handlerFallback") //fallback负责业务异常
     //@SentinelResource(value = "fallback",blockHandler = "blockHandler") //blockHandler负责在sentinel里面配置的降级限流
-    @SentinelResource(value = "fallback",fallback = "handlerFallback",blockHandler = "blockHandler")
+    //@SentinelResource(value = "fallback",fallback = "handlerFallback",blockHandler = "blockHandler") //两者都配置：若 blockHandler 和 fallback 都进行了配置，则被限流降级而抛出 BlockException 时只会进入 blockHandler 处理逻辑。
+    @SentinelResource(value = "fallback",fallback = "handlerFallback",blockHandler = "blockHandler",exceptionsToIgnore = {IllegalArgumentException.class})// 配置忽略属性，java异常就无法处理
     public CommonResult fallback(@PathVariable Long id)
     {
         CommonResult result = restTemplate.getForObject(SERVICE_URL + "/paymentSQL/"+id,CommonResult.class,id);
