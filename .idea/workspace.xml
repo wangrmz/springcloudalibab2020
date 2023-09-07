@@ -4,8 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="44bac13b-77a2-4236-89ea-78932210c2c8" name="Changes" comment="Sentinel-只配置blockHandler处理sentinel的配置异常">
+    <list default="true" id="44bac13b-77a2-4236-89ea-78932210c2c8" name="Changes" comment="Sentinel-配置忽略属性">
+      <change afterPath="$PROJECT_DIR$/cloudalibaba-consumer-nacos-order84/src/main/java/com/atguigu/springcloud/cloudalibaba/service/PaymentFallbackService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cloudalibaba-consumer-nacos-order84/src/main/java/com/atguigu/springcloud/cloudalibaba/service/PaymentService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloudalibaba-consumer-nacos-order84/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/cloudalibaba-consumer-nacos-order84/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloudalibaba-consumer-nacos-order84/src/main/java/com/atguigu/springcloud/cloudalibaba/OrderNacosMain84.java" beforeDir="false" afterPath="$PROJECT_DIR$/cloudalibaba-consumer-nacos-order84/src/main/java/com/atguigu/springcloud/cloudalibaba/OrderNacosMain84.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cloudalibaba-consumer-nacos-order84/src/main/java/com/atguigu/springcloud/cloudalibaba/controller/CircleBreakerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/cloudalibaba-consumer-nacos-order84/src/main/java/com/atguigu/springcloud/cloudalibaba/controller/CircleBreakerController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloudalibaba-consumer-nacos-order84/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/cloudalibaba-consumer-nacos-order84/src/main/resources/application.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -461,7 +467,7 @@
       <workItem from="1684420570657" duration="63055000" />
       <workItem from="1690212867912" duration="9746000" />
       <workItem from="1693547678612" duration="58888000" />
-      <workItem from="1693795623494" duration="68814000" />
+      <workItem from="1693795623494" duration="71921000" />
     </task>
     <task id="LOCAL-00001" summary="测试提交--------">
       <created>1685333691232</created>
@@ -743,7 +749,21 @@
       <option name="project" value="LOCAL" />
       <updated>1694094635699</updated>
     </task>
-    <option name="localTasksCounter" value="41" />
+    <task id="LOCAL-00041" summary="Sentinel-fallback和blockHandler都配置&#10;若 blockHandler 和 fallback 都进行了配置，则被限流降级而抛出 BlockException 时只会进入 blockHandler 处理逻辑。">
+      <created>1694094905828</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1694094905828</updated>
+    </task>
+    <task id="LOCAL-00042" summary="Sentinel-配置忽略属性">
+      <created>1694095151394</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1694095151394</updated>
+    </task>
+    <option name="localTasksCounter" value="43" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -772,8 +792,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="gateway服务网关-代码配置路由" />
-    <MESSAGE value="gateway服务网关-常用的predicate" />
     <MESSAGE value="gateway服务网关-过滤器Filter" />
     <MESSAGE value="config配置中心基础获取github配置文件基础工程搭建" />
     <MESSAGE value="config配置中心基础获取github配置文件基础工程搭建--补充" />
@@ -797,7 +815,9 @@
     <MESSAGE value="Sentinel-只配置fallback，处理业务异常" />
     <MESSAGE value="Sentinel-只配置blockHandler" />
     <MESSAGE value="Sentinel-只配置blockHandler处理sentinel的配置异常" />
-    <option name="LAST_COMMIT_MESSAGE" value="Sentinel-只配置blockHandler处理sentinel的配置异常" />
+    <MESSAGE value="Sentinel-fallback和blockHandler都配置&#10;若 blockHandler 和 fallback 都进行了配置，则被限流降级而抛出 BlockException 时只会进入 blockHandler 处理逻辑。" />
+    <MESSAGE value="Sentinel-配置忽略属性" />
+    <option name="LAST_COMMIT_MESSAGE" value="Sentinel-配置忽略属性" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

@@ -15,6 +15,12 @@
     </properties>
 
     <dependencies>
+        <!--引入opefeign组件，配合sentinel实现服务熔断 -->
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-openfeign</artifactId>
+        </dependency>
+
         <!--引入nacos的依赖-->
         <dependency>
             <groupId>com.alibaba.cloud</groupId>
