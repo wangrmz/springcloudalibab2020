@@ -13,15 +13,68 @@ spring:
       discovery:
         server-addr: 127.0.0.1:8848 #nacos\u4F5C\u4E3A\u6CE8\u518C\u4E2D\u5FC3\u7684\u5730\u5740
     sentinel:
+      datasource:
+        ds1:
+          nacos:
+            server-addr: localhost:8848
+            #data-id: ${spring.application.name}
+            data-id: cloudalibaba-sentinel-service
+            group-id: DEFAULT_GROUP
+            data-type: json
+            rule-type: flow
+#          nacos:
+#            server-addr: localhost:8848
+#            dataId: ${spring.application.name}
+#            groupId: DEFAULT_GROUP
+#            data-type: json
+#            rule-type: flow
       transport:
         # \u914D\u7F6Esentinel dashboard\u5730\u5740
         dashboard: 127.0.0.1:8080
         #\u9ED8\u8BA48791\u7AEF\u53E3\uFF0C\u52A0\u5165\u88AB\u5360\u7528\u4F1A\u81EA\u52A8\u4ECE8791\u5F00\u59CB\u4E00\u6B21+1\u626B\u63CF\uFF0C\u76F4\u81F3\u627E\u5230\u672A\u88AB\u5360\u7528\u7684\u7AEF\u53E3
         port: 8791
+        #\u5C06sentinel\u7684\u89C4\u5219\u6301\u4E45\u5316\u8FDBnacos
+#      datasource:
+#        ds1:
+#          nacos:
+#            server-addr: localhost:8848
+#            #dataId: ${spring.application.name}
+#            dataId: cloudalibaba-sentinel-service
+#            groupId: DEFAULT_GROUP
+#            data-type: json
+#            rule-type: flow
+
+
 
 management:
   endpoints:
     web:
       exposure:
         include: '*'
+# \u6FC0\u6D3BSentinel\u5BF9Feign\u7684\u652F\u6301
+feign:
+  sentinel:
+    enabled: true
+
+#
+#  [
+#    {
+#      "resource": "/rateLimit/byUrl",
+#      "limitApp": "default",
+#      "grade": 1,
+#      "count": 1,
+#      "strategy": 0,
+#      "controlBehavior": 0,
+#      "clusterMode": false
+#    }
+#  ]
+#
+#
+#  resource\uFF1A\u8D44\u6E90\u540D\u79F0\uFF1B
+#  limitApp\uFF1A\u6765\u6E90\u5E94\u7528\uFF1B
+#  grade\uFF1A\u9608\u503C\u7C7B\u578B\uFF0C0\u8868\u793A\u7EBF\u7A0B\u6570\uFF0C1\u8868\u793AQPS\uFF1B
+#  count\uFF1A\u5355\u673A\u9608\u503C\uFF1B
+#  strategy\uFF1A\u6D41\u63A7\u6A21\u5F0F\uFF0C0\u8868\u793A\u76F4\u63A5\uFF0C1\u8868\u793A\u5173\u8054\uFF0C2\u8868\u793A\u94FE\u8DEF\uFF1B
+#  controlBehavior\uFF1A\u6D41\u63A7\u6548\u679C\uFF0C0\u8868\u793A\u5FEB\u901F\u5931\u8D25\uFF0C1\u8868\u793AWarm Up\uFF0C2\u8868\u793A\u6392\u961F\u7B49\u5F85\uFF1B
+#  clusterMode\uFF1A\u662F\u5426\u96C6\u7FA4\u3002
 
