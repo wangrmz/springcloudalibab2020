@@ -4,13 +4,26 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="44bac13b-77a2-4236-89ea-78932210c2c8" name="Changes" comment="Sentinel-热点key限流">
-      <change afterPath="$PROJECT_DIR$/cloudalibaba-sentinel-service8401/src/main/java/com/atguigu/springcloud/cloudalibaba/controller/RateLimitController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloudalibaba-sentinel-service8401/src/main/java/com/atguigu/springcloud/cloudalibaba/myhandler/CustomerBlockHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/8/c/8cf05d42505ff49047085dd6dd68bf86e15d37a4" beforeDir="false" />
+    <list default="true" id="44bac13b-77a2-4236-89ea-78932210c2c8" name="Changes" comment="Sentinel-@SentinelResource注解：&#10;1、按资源名称限流+后续处理；&#10;2、按照Url地址限流+后续处理；&#10;3、客户自定义限流处理逻辑；">
+      <change afterPath="$PROJECT_DIR$/cloudalibaba-consumer-nacos-order84/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cloudalibaba-consumer-nacos-order84/src/main/java/com/atguigu/springcloud/cloudalibaba/config/ApplicationContextConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cloudalibaba-consumer-nacos-order84/src/main/java/com/atguigu/springcloud/cloudalibaba/controller/CircleBreakerController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cloudalibaba-provider-payment9003/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cloudalibaba-provider-payment9003/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cloudalibaba-provider-payment9003/src/main/java/com/atguigu/springcloud/cloudalibaba/PaymentMain9003.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cloudalibaba-provider-payment9003/src/main/java/com/atguigu/springcloud/cloudalibaba/controller/PaymentController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cloudalibaba-provider-payment9003/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cloudalibaba-provider-payment9003/src/test/java/com/atguigu/springcloud/cloudalibaba/CloudalibabaProviderPayment9003ApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cloudalibaba-provider-payment9004/src/main/java/com/atguigu/springcloud/cloudalibaba/controller/PaymentController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloudalibaba-sentinel-service8401/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/cloudalibaba-sentinel-service8401/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-api-commons/target/cloud-api-commons-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-api-commons/target/cloud-api-commons-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-consumer-order80/target/cloud-consumer-order80-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-consumer-order80/target/cloud-consumer-order80-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-provider-payment8001/target/cloud-provider-payment8001-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-provider-payment8001/target/cloud-provider-payment8001-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -108,6 +121,7 @@
       <recent name="com.atguigu.springcloud" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.atguigu.springcloud.cloudalibaba.controller" />
       <recent name="com.atguigu.springcloud.controller" />
       <recent name="com.atguigu.springcloud.service" />
       <recent name="com.atguigu.springcloud" />
@@ -122,7 +136,7 @@
     </option>
     <option name="openRunningConfigInTab" value="true" />
   </component>
-  <component name="RunManager" selected="Spring Boot.MainApp8401">
+  <component name="RunManager" selected="Spring Boot.OrderNacosMain84">
     <configuration name="T2" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="T2" />
       <module name="cloud-provider-payment8001" />
@@ -210,7 +224,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="HystrixDashboardMain9001" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+    <configuration name="HystrixDashboardMain9001" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <option name="ACTIVE_PROFILES" />
       <module name="cloud-consumer-hystrix-dashboard9001" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.atguigu.springcloud.HystrixDashboardMain9001" />
@@ -300,6 +314,14 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="OrderNacosMain84" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <option name="ACTIVE_PROFILES" />
+      <module name="cloudalibaba-consumer-nacos-order84" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.atguigu.springcloud.cloudalibaba.OrderNacosMain84" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="PaymentHystrixMain8001" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <option name="ACTIVE_PROFILES" />
       <module name="cloud-provider-hystrix-payment8001" />
@@ -337,6 +359,7 @@
       </method>
     </configuration>
     <configuration name="PaymentMain8006" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <option name="ACTIVE_PROFILES" />
       <module name="cloud-providerconsul-payment8006" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.atguigu.springcloud.PaymentMain8006" />
       <method v="2">
@@ -355,6 +378,22 @@
       <option name="ACTIVE_PROFILES" />
       <module name="cloudalibaba-provider-payment9002" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.atguigu.springcloud.PaymentMain9002" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PaymentMain9003" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <option name="ACTIVE_PROFILES" />
+      <module name="cloudalibaba-provider-payment9003" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.atguigu.springcloud.cloudalibaba.PaymentMain9003" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PaymentMain9004" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <option name="ACTIVE_PROFILES" />
+      <module name="cloudalibaba-provider-payment9004" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.atguigu.springcloud.cloudalibaba.PaymentMain9004" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -385,6 +424,9 @@
     </configuration>
     <list>
       <item itemvalue="Application.T2" />
+      <item itemvalue="Spring Boot.OrderNacosMain84" />
+      <item itemvalue="Spring Boot.PaymentMain9004" />
+      <item itemvalue="Spring Boot.PaymentMain9003" />
       <item itemvalue="Spring Boot.MainApp8401" />
       <item itemvalue="Spring Boot.NacosConfigClientMain3377" />
       <item itemvalue="Spring Boot.OrderNacosMain83" />
@@ -419,7 +461,6 @@
       <list>
         <item itemvalue="Spring Boot.PaymentMain8001" />
         <item itemvalue="Spring Boot.EurekaMain7001" />
-        <item itemvalue="Spring Boot.HystrixDashboardMain9001" />
         <item itemvalue="Spring Boot.OrderMainConsul80" />
       </list>
     </recent_temporary>
@@ -438,7 +479,7 @@
       <workItem from="1684420570657" duration="63055000" />
       <workItem from="1690212867912" duration="9746000" />
       <workItem from="1693547678612" duration="58888000" />
-      <workItem from="1693795623494" duration="60033000" />
+      <workItem from="1693795623494" duration="67988000" />
     </task>
     <task id="LOCAL-00001" summary="测试提交--------">
       <created>1685333691232</created>
@@ -692,7 +733,14 @@
       <option name="project" value="LOCAL" />
       <updated>1694073938324</updated>
     </task>
-    <option name="localTasksCounter" value="37" />
+    <task id="LOCAL-00037" summary="Sentinel-@SentinelResource注解：&#10;1、按资源名称限流+后续处理；&#10;2、按照Url地址限流+后续处理；&#10;3、客户自定义限流处理逻辑；">
+      <created>1694077664229</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1694077664229</updated>
+    </task>
+    <option name="localTasksCounter" value="38" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -721,7 +769,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="hystrix之全局服务降级DefaultProperties" />
     <MESSAGE value="hystrix之通配服务降级fallback" />
     <MESSAGE value="hystrix之服务熔断" />
     <MESSAGE value="Hystrix Dashboard图形化监控" />
@@ -746,7 +793,8 @@
     <MESSAGE value="Sentinel流控之QPS与线程，快速失败" />
     <MESSAGE value="Sentinel服务降级规则：RT,异常比例,异常数" />
     <MESSAGE value="Sentinel-热点key限流" />
-    <option name="LAST_COMMIT_MESSAGE" value="Sentinel-热点key限流" />
+    <MESSAGE value="Sentinel-@SentinelResource注解：&#10;1、按资源名称限流+后续处理；&#10;2、按照Url地址限流+后续处理；&#10;3、客户自定义限流处理逻辑；" />
+    <option name="LAST_COMMIT_MESSAGE" value="Sentinel-@SentinelResource注解：&#10;1、按资源名称限流+后续处理；&#10;2、按照Url地址限流+后续处理；&#10;3、客户自定义限流处理逻辑；" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

@@ -66,14 +66,6 @@ Gcloud-consumer-order80/src/main/java/com/atguigu/myrule/MySelfRule.java,0/e/0e
 Vcloud-consumerconsul-order80/src/main/java/springcloud/controller/OrderController.java,2/a/2a6bf5113370156cd297a0079c8fd168dae82e25
 }
 Mcloud-consumerconsul-order80/src/main/java/springcloud/OrderMainConsul80.java,f/0/f0c379254b707304de424832263261a064cceb2f
-ò
-hcloud-providerconsul-payment8006/src/main/java/com/atguigu/springcloud/controller/PaymentController.java,0/e/0ea4d315c9f6db32e2c2a13d13d69ca4be5117f9
-ã
-[cloud-providerconsul-payment8006/src/main/java/com/atguigu/springcloud/PaymentMain8006.java,3/5/355aa6d8fdb0d1a5fb9ac729e4de23f6141020d5
-T
-$cloud-consumerconsul-order80/pom.xml,4/e/4ea02ed2d36d62c4cfd731fe58cad64bb2280e62
-X
-(cloud-providerconsul-payment8006/pom.xml,2/b/2b5ee1939879347715749e39d139e86fe35ba326
 í
 bcloud-provider-payment8002/src/main/java/com/atguigu/springcloud/controller/PaymentController.java,2/2/22eb6fcc402924ec9f75db8ec38af37b3a8b0727
 Å

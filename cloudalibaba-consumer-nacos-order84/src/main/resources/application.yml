@@ -1,0 +1,33 @@
+#server:
+#  port: 83
+#
+#
+#spring:
+#  application:
+#    name: nacos-order-consumer
+#cloud:
+#  nacos:
+#    discovery:
+#      server-addr: localhost:8848
+
+
+server:
+  port: 84
+
+spring:
+  application:
+    name: nacos-order-consumer
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 127.0.0.1:8848 #nacos\u4F5C\u4E3A\u6CE8\u518C\u4E2D\u5FC3\u7684\u5730\u5740
+    sentinel:
+      transport:
+        # \u914D\u7F6Esentinel dashboard\u5730\u5740
+        dashboard: 127.0.0.1:8080
+        #\u9ED8\u8BA48791\u7AEF\u53E3\uFF0C\u52A0\u5165\u88AB\u5360\u7528\u4F1A\u81EA\u52A8\u4ECE8791\u5F00\u59CB\u4E00\u6B21+1\u626B\u63CF\uFF0C\u76F4\u81F3\u627E\u5230\u672A\u88AB\u5360\u7528\u7684\u7AEF\u53E3
+        port: 8791
+
+#\u6D88\u8D39\u8005\u5C06\u8981\u53BB\u8BBF\u95EE\u7684\u5FAE\u670D\u52A1\u540D\u79F0(\u6CE8\u518C\u6210\u529F\u8FDBnacos\u7684\u5FAE\u670D\u52A1\u63D0\u4F9B\u8005)
+service-url:
+  nacos-user-service: http://nacos-payment-provider
