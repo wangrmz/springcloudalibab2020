@@ -76,8 +76,6 @@ W
 \cloud-provider-payment8001/src/main/java/com/atguigu/springcloud/service/PaymentService.java,1/1/11d55cbc429655218d66f46007c7d6df39371bcc
 Š
 Zcloud-consumer-feign-order80/src/main/java/com/atguigu/springcloud/config/FeignConfig.java,b/7/b7737a56db0161a71fd9790b94e946aa11d608fb
-R
-"cloud-provider-payment8002/pom.xml,d/2/d2bb34221ba1368d3a59155a41c7f7a6ca55a5cc
 ]
 -cloud-provider-hystrix-payment8001/.gitignore,f/8/f8ba7c295951a3f3af8bccb3146504124c631c6c
 ˆ
@@ -88,10 +86,6 @@ fcloud-consumer-feign-order80/src/main/java/com/atguigu/springcloud/controller/O
 ccloud-consumer-feign-order80/src/main/java/com/atguigu/springcloud/service/PaymentFeignService.java,8/c/8c91e3ebc5bce2a4d5dcc52071ba5b1937d0bef5
 _
 /cloud-consumer-feign-hystrix-order80/.gitignore,c/8/c8a8d288c75dfbc8a779e873fee9bc6a8358367f
-T
-$cloud-consumer-feign-order80/pom.xml,5/5/559aa41f7ac5e0dcb9bed13bd4221db941fa3f9c
-\
-,cloud-consumer-feign-hystrix-order80/pom.xml,e/b/ebb8c6d28b118fcb9094b49e8d733984c3d21f47
 ’
 bcloud-consumer-feign-hystrix-order80/src/main/java/com/atguigu/springcloud/OrderHystrixMain80.java,7/2/722bf722244f87c593797aab2168fabc29fcce03
 ž
