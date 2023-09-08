@@ -35,7 +35,7 @@ public class OrderServiceImpl implements OrderService
      * 下订单->减库存->减余额->改状态
      */
     @Override
-    @GlobalTransactional(name = "fsp-create-order",rollbackFor = Exception.class)
+    @GlobalTransactional(name = "fsp-create-order",rollbackFor = Exception.class)// 分布式事务：参考spring事务，发生任何异常都回滚
     public void create(Order order) {
         log.info("------->下单开始");
         //本应用创建订单
